@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.4.0.schema.json
+
+PackageIdentifier: albertony.npiperelay
+PackageVersion: 1.6.3
+Installers:
+- Architecture: x86
+  InstallerType: zip
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: npiperelay.exe
+    PortableCommandAlias: npiperelay
+  InstallerUrl: https://github.com/albertony/npiperelay/releases/download/v1.6.3/npiperelay_windows_386.zip
+  InstallerSha256: 98040330c2531d09b2a6d39e282ce747a07c2063942532e3534fba264a639c1b
+- Architecture: x64
+  InstallerType: zip
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: npiperelay.exe
+    PortableCommandAlias: npiperelay
+  InstallerUrl: https://github.com/albertony/npiperelay/releases/download/v1.6.3/npiperelay_windows_amd64.zip
+  InstallerSha256: d1e2f7a3ec493d9f9a918ccfbc3c1346d14fbcf28ac898ff2fcd33b94f3bc52f
+ManifestType: installer
+ManifestVersion: 1.4.0
